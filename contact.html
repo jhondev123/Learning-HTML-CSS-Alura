@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleContact.css">
+      <title>Avançando com html css</title>
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <h1><img src="imgs/logo.png"alt="logo da barbearia"></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <div class="formulario">
+          <label for="nome">Nome </label>
+          <input id="nome" type="text" class="inputPadrao" required>
+
+          <label for="email">Email</label>
+          <input class="inputPadrao" id="email" required type="email" placeholder="seuemail@dominio.com">
+
+          <label for="telefone">Telefone</label>
+          <input class="inputPadrao" id="telefone" required type="tel" placeholder="(xx)xxxxx-xxxx">
+
+          <label for="msg">Mensagem</label>
+          <textarea class="inputPadrao" cols="30" id="msg" required rows="10"></textarea>
+          <fieldset class="contatos">
+            <legend>Como prefere o contato? </legend>
+            <label for="emailRadio"> <input type="radio" name="escolhaDoContato" id="emailRadio" value="email"> Email </label>
+
+            <label for="telefone-radio"> <input id="telefone-radio" name="escolhaDoContato" type="radio"> Telefone</label>
+
+            <label for="whatszapp"> <input id="whatszapp" name="escolhaDoContato" type="radio" checked> Whatszapp</label>
+          </fieldset>
+
+          <fieldset class="select">
+            <label for="escolhaSelect">Qual horario prefere ser atendido?</label>
+            <select id="escolhaSelect">
+              <option>Manhã</option>
+              <option>tarde</option>
+              <option>noite</option>
+            </select>
+          </fieldset>
+          <label for="receber-email"><input  id="receber-email" type="checkbox" checked> Gostaria de Receber as novidades por email?</label>
+
+          <input class="enviar" type="submit" value="Enviar">
+
+          <div class="tabela">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dia</th>
+                  <th>Horário</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Segunda</td>
+                  <td>8 até as 20 horas</td>
+                </tr>
+                <tr>
+                  <td>Quarta</td>
+                  <td>8 até as 20 horas</td>
+                </tr>
+                <tr>
+                  <td>Sexta</td>
+                  <td>8 até as 20 horas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+        <div class="footer">
+          <img src="imgs/logo-branco.png" alt="logo da barbearia">
+          <p class="copyright">&copy; copyright Jhondev123 - 2022</p>
+        </div>
+    </footer>
+  </body>
+</html>
